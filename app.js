@@ -161,6 +161,9 @@ $(document).ready(function(){
       setHourText(hour);
     } else{
       var nextHour = Math.round(hour) + 1;
+      if(nextHour == 13){
+        nextHour = 1;
+      }
       setHourText(nextHour);
 
     }
